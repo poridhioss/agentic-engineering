@@ -4,13 +4,14 @@
 
 ### Module 1: Relational Databases
 
+**Week 15**
+
 ### Class Topics
 
-- Relational Model: Tables, Keys, Constraints, Normalization
-- Indexing Strategies: B-Tree, Composite, Covering Indexes
-- Query Optimization: EXPLAIN Plans, Slow Query Logs, N+1
-- Natural Language to SQL with AI
-- Schema Design with AI
+- Relational Model and Normalization
+- B-Tree and Composite Indexes
+- Query Optimization and EXPLAIN Plans
+- Natural Language to SQL
 
 ### Hands-On Labs
 
@@ -35,7 +36,7 @@
 **Infrastructure**
 
 - PostgreSQL Docker Setup with MCP Server
-- DB Protection Hook: Whitelist SQL Operations
+- DB Protection Hook with SQL Operation Whitelist
 - GitHub Actions Slow Query Detection on Migration PRs
 
 ### AI Exam
@@ -45,13 +46,14 @@
 
 ### Module 2: NoSQL & Caching
 
+**Week 16**
+
 ### Class Topics
 
-- NoSQL Data Models: Document, Key-Value, Wide-Column, Time-Series
-- MongoDB: Collections, Aggregation Pipelines, Schema-on-Read
-- Redis: Data Structures, TTL, Eviction, Cache vs. Primary Store
-- Cache Strategies: Cache-Aside, Read-Through, Write-Through
-- AI-Assisted Data Store Selection
+- NoSQL Data Models
+- MongoDB Aggregation Pipelines
+- Redis Data Structures and TTL
+- Cache-Aside and Read-Through Patterns
 
 ### Hands-On Labs
 
@@ -70,12 +72,12 @@
 **Full-Text Search**
 
 - PostgreSQL tsvector Full-Text Search on Product Catalog
-- PostgreSQL FTS vs. LIKE Query Benchmark
+- PostgreSQL FTS versus LIKE Query Benchmark
 - MongoDB Atlas Search or Elasticsearch Query DSL
 
 **Infrastructure**
 
-- Docker Compose: PostgreSQL + MongoDB + Redis Data Stack
+- Docker Compose with PostgreSQL MongoDB and Redis
 - All Three Stores Exposed as MCP Servers
 
 ### AI Exam
@@ -85,20 +87,21 @@
 
 ### Module 3: API Design & Communication Protocols
 
+**Week 17**
+
 ### Class Topics
 
-- REST Design Principles and Versioning
-- GraphQL: Schema-First Design and N+1 in Resolvers
-- gRPC: Protocol Buffers, Streaming, When to Use
-- API Gateway Patterns: Routing, Auth, Rate Limiting
-- AI-Generated OpenAPI Spec Review
+- REST Design and Versioning
+- GraphQL and N+1 in Resolvers
+- gRPC and Protocol Buffers
+- API Gateway Patterns
 
 ### Hands-On Labs
 
 **REST & GraphQL with AI**
 
 - OpenAPI Spec Generation and Design Review
-- REST vs. GraphQL Benchmark on Same Endpoints
+- REST versus GraphQL Benchmark on Same Endpoints
 - N+1 GraphQL Resolver Fix with DataLoader
 
 **API Security**
@@ -109,15 +112,15 @@
 
 **gRPC & API Gateway**
 
-- .proto File for a User Service
-- Envoy Gateway: REST and gRPC Routing
+- Proto File for a User Service
+- Envoy Gateway with REST and gRPC Routing
 - Request Transformation Lua Filter
 - REST API as MCP Server with Auth Headers
 
 **Infrastructure**
 
-- Docker Compose: REST + GraphQL + gRPC + Envoy
-- Nginx Path Prefix Routing: /db, /api, /grpc
+- Docker Compose with REST GraphQL gRPC and Envoy
+- Nginx Path Prefix Routing for DB API and gRPC
 - GitHub Actions OpenAPI Breaking-Change Detection
 
 ### AI Exam
@@ -129,13 +132,14 @@
 
 ### Module 4: Replication, Sharding & Consistency
 
+**Week 18**
+
 ### Class Topics
 
-- CAP Theorem: Consistency, Availability, Partition Tolerance
-- Replication: Leader-Follower, Multi-Leader, Leaderless
-- Sharding: Range, Hash, Directory, Consistent Hashing
-- Consistency Models: Strong, Eventual, Read-Your-Writes
-- AI-Assisted Replication and Shard Strategy Design
+- CAP Theorem and Trade-offs
+- Leader-Follower and Leaderless Replication
+- Sharding and Consistent Hashing
+- Strong and Eventual Consistency
 
 ### Hands-On Labs
 
@@ -143,7 +147,7 @@
 
 - PostgreSQL Leader-Follower Replication Setup
 - Replication Lag Simulation and Fix
-- Failover Drill: Kill Leader, Promote Follower
+- Failover Drill with Leader Kill and Follower Promotion
 
 **Sharding with AI**
 
@@ -159,8 +163,8 @@
 
 **Infrastructure**
 
-- 3-Node PostgreSQL Cluster with HAProxy on Docker Compose
-- AWS RDS Multi-AZ vs. Self-Managed Failover Comparison
+- Three-Node PostgreSQL Cluster with HAProxy on Docker Compose
+- AWS RDS Multi-AZ versus Self-Managed Failover Comparison
 - Prometheus Replication Lag Alert
 
 ### AI Exam
@@ -170,33 +174,34 @@
 
 ### Module 5: Load Balancing, Rate Limiting & CDN
 
+**Week 19**
+
 ### Class Topics
 
-- Load Balancing Algorithms: Round-Robin, Least Connections, IP Hash
-- Layer 4 vs. Layer 7 Load Balancing
-- Rate Limiting Patterns: Token Bucket, Sliding Window, Fixed Window
-- CDN: Edge Caching, Cache-Control, Origin Shield
-- AI Traffic Pattern Analysis
+- Load Balancing Algorithms
+- Layer 4 versus Layer 7
+- Rate Limiting Patterns
+- CDN and Edge Caching
 
 ### Hands-On Labs
 
 **Load Balancing**
 
 - Nginx Layer 7 Load Balancer with Health Checks
-- Round-Robin vs. Least-Connections Under Spike Traffic
+- Round-Robin versus Least-Connections Under Spike Traffic
 - Redis Sliding Window Rate Limiter
 
 **CDN & Caching**
 
 - Cache-Control Header Configuration for REST API
-- TTFB Benchmark: With and Without Nginx Caching Proxy
+- TTFB Benchmark With and Without Nginx Caching Proxy
 - Cache Poisoning Attack and Mitigation Headers
 - CDN Invalidation Script
 
 **Infrastructure**
 
-- Docker Compose: 3 API Replicas + Nginx + Redis Rate Limiter
-- Prometheus + Grafana: RPS, Error Rate, p99 Latency Per Upstream
+- Docker Compose with Three API Replicas Nginx and Redis Rate Limiter
+- Prometheus and Grafana Dashboard for RPS Error Rate and Latency
 
 ### AI Exam
 
@@ -205,13 +210,14 @@
 
 ### Module 6: Message Queues & Event-Driven Architecture
 
+**Week 20**
+
 ### Class Topics
 
-- Why Async: Decoupling, Buffering, Retry and Replay
-- Message Queue Patterns: Point-to-Point, Pub-Sub, Fan-Out, DLQ
-- Kafka: Topics, Partitions, Consumer Groups, Retention
-- Event-Driven Patterns: Event Sourcing, CQRS, Sagas
-- Connection to Module 1 Message Broker
+- Why Async Messaging
+- Message Queue Patterns
+- Kafka Topics and Partitions
+- Event Sourcing and CQRS
 
 ### Hands-On Labs
 
@@ -219,7 +225,7 @@
 
 - Point-to-Point and Pub-Sub on RabbitMQ
 - Dead-Letter Queue with Retry Policy
-- Fan-Out: One Producer, Three Consumers
+- Fan-Out with One Producer and Three Consumers
 
 **Kafka with AI**
 
@@ -229,7 +235,7 @@
 
 **Event-Driven Patterns**
 
-- CQRS: Separate Write and Read Models
+- CQRS with Separate Write and Read Models
 - Distributed Saga with Compensating Transactions
 
 ### AI Exam
@@ -241,21 +247,22 @@
 
 ### Module 7: DB Migration & Schema Evolution
 
+**Week 21**
+
 ### Class Topics
 
-- Schema Migration Strategies: Expand-Contract Pattern
-- Migration Tooling: Flyway, Alembic, Liquibase
-- Risk Assessment: Table Locks, Backfills, Constraint Additions
-- AI Migration Planning: SQL, Risk, Rollback Script
-- Rollback Planning: Down Before Up
+- Schema Migration Strategies
+- Flyway Alembic and Liquibase
+- Migration Risk Assessment
+- Down Before Up Rollbacks
 
 ### Hands-On Labs
 
 **Migration Planning with AI**
 
-- Schema Change: Migration SQL, Risk Assessment, Rollback Script
+- Schema Change with Migration SQL Risk Assessment and Rollback Script
 - Dangerous Migration Identification and Safe Alternative
-- 10M Row Backfill Dry-Run with EXPLAIN ANALYZE
+- Ten Million Row Backfill Dry-Run with EXPLAIN ANALYZE
 
 **Zero-Downtime Migration**
 
@@ -275,19 +282,20 @@
 
 ### Module 8: Microservices & Observability
 
+**Weeks 22–23**
+
 ### Class Topics
 
-- Monolith vs. Microservices: When the Split is Worth It
-- Service Discovery: Consul, Kubernetes DNS
-- Inter-Service Communication: Sync vs. Async
-- Distributed Tracing Across Multiple Services
-- AI for Bottleneck Identification in Traces
+- Monolith versus Microservices
+- Service Discovery with Consul
+- Distributed Tracing Across Services
+- AI Bottleneck Identification
 
 ### Hands-On Labs
 
 **Microservices Decomposition with AI**
 
-- Serverless Platform Decomposed into 3 Microservices
+- Serverless Platform Decomposed into Three Microservices
 - Service Discovery with Consul
 - Circuit Breaker Between Services
 
@@ -305,10 +313,10 @@
 
 **Infrastructure**
 
-- Docker Compose: 3 Microservices + Consul + Envoy + Prometheus + Tempo + Grafana
+- Docker Compose with Three Microservices Consul Envoy Prometheus Tempo and Grafana
 - Grafana Service Map Dashboard
 - AWS CloudWatch and Alertmanager for Production Alerting
-- Terraform: Isolated EC2 Per Microservice
+- Terraform with Isolated EC2 Per Microservice
 - AWS Lambda for Event-Driven Stateless Services
 
 ### AI Exam
@@ -320,32 +328,33 @@
 
 ### Module 9: Classic System Design Problems
 
+**Week 24**
+
 ### Class Topics
 
-- System Design Framework: Requirements → Scale → Data → API → Components
-- AI as Design Partner: Challenge Every Component
-- Back-of-Envelope Scale Estimation
-- Common Patterns: Write-Heavy, Hot Key, Fan-Out on Write vs. Read
-- Tradeoff Vocabulary: Consistency, Latency, Throughput, Simplicity
+- System Design Framework
+- AI as Design Partner
+- Back-of-Envelope Estimation
+- Write-Heavy and Fan-Out Patterns
 
 ### Hands-On Labs
 
 **Design Sessions with AI**
 
-- URL Shortener: Full Design, 2 Flaws Forced, Redesign
-- Notification System: Queue Topology and Failure Scenarios
-- News Feed: Fan-Out on Write vs. Read Decision and Defense
+- URL Shortener Full Design with Two Forced Flaws and Redesign
+- Notification System Queue Topology and Failure Scenarios
+- News Feed Fan-Out on Write versus Read Decision and Defense
 
 **Tradeoff Analysis with AI**
 
-- Tradeoff Table: What Breaks at 10x Scale
-- Rate Limiter: 3 Implementations Benchmarked
-- Hot Key Mitigation: Local Cache and Jitter
+- Tradeoff Table for What Breaks at Ten Times Scale
+- Rate Limiter with Three Implementations Benchmarked
+- Hot Key Mitigation with Local Cache and Jitter
 
-**Build: URL Shortener & Notification System**
+**URL Shortener & Notification System**
 
-- URL Shortener: FastAPI + PostgreSQL + Redis + Nginx, 10K req/s Load Test
-- Notification System: FastAPI → RabbitMQ → Workers with DLQ
+- URL Shortener with FastAPI PostgreSQL Redis and Nginx at Ten Thousand Requests per Second
+- Notification System with FastAPI RabbitMQ Workers and DLQ
 
 ### AI Exam
 
@@ -356,12 +365,13 @@
 
 ### Module 10: Natural Language DB Interaction & Log Analysis
 
+**Weeks 25–26**
+
 ### Class Topics
 
-- Database as MCP Server: Query, Explain, Profile via Agent
-- NL-to-Database Pipeline: Intent → SQL → Execute → Answer
-- DB Monitoring: Query Latency, Pool Saturation, Lock Waits
-- Log Analysis at Scale: Cost-Effective Classification First
+- Database as MCP Server
+- NL-to-Database Pipeline
+- DB Monitoring and Lock Waits
 - AI-Driven Incident Response
 
 ### Hands-On Labs
@@ -369,9 +379,9 @@
 **Natural Language DB Interface**
 
 - Module 1 MCP Infrastructure Reconfigured for Module 2 Databases
-- Plain English Queries Across PostgreSQL, MongoDB, and Redis
+- Plain English Queries Across PostgreSQL MongoDB and Redis
 - NL Failure Mode Documentation and Disambiguation Fix
-- Cross-Store Query: Sessions Without DB Records
+- Cross-Store Query for Sessions Without DB Records
 
 **DB Monitoring with AI**
 
@@ -382,13 +392,13 @@
 **Log Analysis with Cost-Effective Models**
 
 - Module 1 Tiered Log Pipeline Applied to DB Logs
-- DB-Specific Escalation Rules: Deadlocks, Lock Waits
-- Token Reduction Comparison vs. Module 1 Baseline
+- DB-Specific Escalation Rules for Deadlocks and Lock Waits
+- Token Reduction Comparison versus Module 1 Baseline
 
 **Infrastructure**
 
 - Dockerized MCP Servers with Health Checks
-- Docker Compose: MCP Servers + Nginx Reverse Proxy
+- Docker Compose with MCP Servers and Nginx Reverse Proxy
 - MCP Servers on AWS EC2 Private VPC
 - MCP Servers as systemd Services on EC2
 

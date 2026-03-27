@@ -4,13 +4,14 @@
 
 ### Module 1: LLM Basics & Token Economics
 
+**Week 1**
+
 ### Class Topics
 
 - Transformer Architecture and Tokenization
-- Context Window and KV Cache Mechanics
-- Token Economics and Input/Output Pricing
-- The 40% Context Utilization Rule
-- Context Window as Working Memory
+- Context Window and KV Cache
+- Token Economics and Pricing
+- The 40% Context Rule
 
 ### Hands-On Labs
 
@@ -27,23 +28,25 @@
 
 ### Module 2: Model Routing & Programmatic Tool Calling
 
+**Week 2**
+
 ### Class Topics
 
-- Model Routing: Cost-Effective vs. Capable vs. Powerful
-- Programmatic Tool Calling (PTC)
+- Model Routing Strategies
+- Programmatic Tool Calling
 - Tool Search and Lazy Loading
-- When PTC Beats Traditional Tool Calling
+- When PTC Beats Traditional Tools
 
 ### Hands-On Labs
 
 **Model Routing**
 
 - Rule-Based Model Router Build
-- Router Testing Across 10 Developer Tasks
+- Router Testing Across Ten Developer Tasks
 
-**PTC in Practice**
+**Programmatic Tool Calling**
 
-- 5-Tool Agent Rewrite with PTC
+- Five-Tool Agent Rewrite with PTC
 - On-Demand Tool Library with Discovery
 
 ### AI Exam
@@ -55,33 +58,34 @@
 
 ### Module 3: Building Real Systems with AI
 
+**Weeks 3–5**
+
 ### Class Topics
 
-- AI as a Pair Programmer, Not a Code Generator
-- Specification-Driven Development: AB Method and RIPER Workflow
-- Iterative Development and Immediate Verification
-- Reading AI-Generated Code Critically
-- Recognizing Hallucinated Architecture
+- AI as Pair Programmer
+- AB Method and RIPER Workflow
+- Iterative Development and Verification
+- Reading and Reviewing AI-Generated Code
 
 ### Hands-On Labs
 
-**Project 1: Build Redis from Scratch**
+**Redis from Scratch**
 
-- Spec First: RESP Protocol, Commands, Data Structures
+- Specification First with RESP Protocol and Commands
 - AGENTS.md Setup and Forbidden Shortcuts
-- Verified Slices: TCP Server to Sorted Sets
+- Verified Slices from TCP Server to Sorted Sets
 - TTL, LRU/LFU Eviction, AOF, and Mistake Prevention
 
-**Project 2: Build a Modern Message Broker Platform**
+**Message Broker Platform**
 
-- Spec and AGENTS.md Extension from Project 1
-- Vertical Slices: Partition Log to Dead-Letter Handling
+- Specification and AGENTS.md Extension from Redis Project
+- Vertical Slices from Partition Log to Dead-Letter Handling
 - WebSocket Streaming and Schema Validation with Subagents
 - Redis Pub/Sub Integration and End-to-End Log Trace
 
-**Project 3: Build a Serverless Platform**
+**Serverless Platform**
 
-- Spec with RIPER Workflow: Registry, Cold/Warm Start, Triggers
+- Specification with RIPER Workflow for Registry and Triggers
 - Function Isolation with Linux Namespaces and Cgroups
 - HTTP, Cron, and Message Triggers with Subagents
 - Full Three-System Integration with Structured JSON Logs
@@ -93,13 +97,14 @@
 
 ### Module 4: Debugging & Refactoring with AI
 
+**Week 6**
+
 ### Class Topics
 
-- Systematic Debugging: Error → Hypothesis → Verify → Fix
+- Systematic Debugging Methods
 - Debugging as a Conversation
-- Refactoring Legacy Code with AI
-- The Refactor Loop: Read → Propose → Test → Accept
-- Recognizing Bad AI Output and Hallucinated Fixes
+- Refactoring Legacy Code and the Refactor Loop
+- Recognizing Bad AI Output
 
 ### Hands-On Labs
 
@@ -123,21 +128,23 @@
 
 ### Module 5: Testing, Code Review, Docs & Git Workflows
 
+**Week 7**
+
 ### Class Topics
 
-- AI-Assisted TDD: Failing Test First
-- AI Code Review: First Pass AI, Final Decision Engineer
-- Living Documentation with Hook Enforcement
-- Semantic Commits and PR Descriptions from Diffs
+- AI-Assisted TDD
+- AI Code Review
+- Living Documentation with Hooks
+- Semantic Commits and PR Descriptions
 
 ### Hands-On Labs
 
 **Testing & Code Review**
 
 - pytest Suite Generation for an Existing Module
-- TDD with AI: 5 Failing Tests, AI Implements
+- TDD with AI and Failing Test First
 - AI-Assisted PR Review on a 200-Line Diff
-- AI Review vs. Human Review Comparison
+- AI Review versus Human Review Comparison
 
 **Docs & Git Workflows**
 
@@ -155,21 +162,22 @@
 
 ### Module 6: Tool Calling & MCP
 
+**Week 8**
+
 ### Class Topics
 
-- Tool Calling Architecture and JSON Schema
-- Model Context Protocol (MCP)
-- Building MCP Servers: Database, Codebase, CI/CD
-- Runtime Tool Discovery
-- MCP Security: Auth, Scopes, Sandboxing
+- Tool Calling Architecture
+- Model Context Protocol
+- Building MCP Servers with Runtime Discovery
+- MCP Security and Sandboxing
 
 ### Hands-On Labs
 
 **Building MCP Servers**
 
-- Codebase MCP Server: Read, Grep, Git Log, Diff
-- Database MCP Server: SQL Query, Schema, Migration Status
-- CI/CD MCP Server: Pipeline Status, Test Results, Deploy Logs
+- Codebase MCP Server with Read Grep and Git Log
+- Database MCP Server with SQL Query and Schema Access
+- CI/CD MCP Server with Pipeline Status and Deploy Logs
 
 **MCP Clients & Dynamic Discovery**
 
@@ -179,17 +187,18 @@
 
 ### AI Exam
 
-- Codebase Health Agent Using 3 MCP Servers
+- Codebase Health Agent Using Three MCP Servers
 
 
 ### Module 7: Context Engineering & AGENTS.md
 
+**Week 9**
+
 ### Class Topics
 
 - AGENTS.md as Living Infrastructure
-- The Table-of-Contents Pattern
-- Three Context Layers by TTL: Static, Dynamic, Ephemeral
-- TTL Management: Summarize vs. Prune
+- Three Context Layers by TTL
+- TTL Management and Compaction
 - Context Compaction and Session Handoff
 
 ### Hands-On Labs
@@ -197,7 +206,7 @@
 **AGENTS.md for Real Projects**
 
 - AGENTS.md for a FastAPI Project
-- Prevention Rule Pattern: Trigger, Encode, Measure
+- Prevention Rule Pattern with Trigger and Measurement
 - Tiered Context Loading Token Comparison
 
 **Dynamic Context & Session Management**
@@ -213,13 +222,14 @@
 
 ### Module 8: Subagents & Agent Delegation
 
+**Week 10**
+
 ### Class Topics
 
-- Subagent Architecture: Isolated Workers, Parent Relays
-- When to Delegate: Independent, Context-Heavy, Different Tools
+- Subagent Architecture and Delegation
+- When to Delegate
 - Parallel Subagent Execution
-- Planning/Execution Separation
-- Flat Delegation Hierarchies
+- Planning and Execution Separation
 
 ### Hands-On Labs
 
@@ -227,13 +237,13 @@
 
 - Code Review Subagent
 - Test Generation Subagent
-- Parallel Codebase Scanner: 4 Subagents, 4 Directories
+- Parallel Codebase Scanner with Four Subagents
 
 **Planner/Executor Separation**
 
 - Planner Agent from Feature Spec
 - Executor Agents Per Task
-- Sequential vs. Parallel Execution Comparison
+- Sequential versus Parallel Execution Comparison
 
 ### AI Exam
 
@@ -242,26 +252,27 @@
 
 ### Module 9: Skills & Hooks
 
+**Week 11**
+
 ### Class Topics
 
-- Skills: On-Demand Context by Description Matching
-- Skills vs. AGENTS.md: Always-On vs. On-Demand
-- Hook Lifecycle: PreToolUse, PostToolUse, Session Start
-- Security Hooks: Block Dangerous Commands
-- parry: Prompt Injection Scanner for Hooks
+- Skills as On-Demand Context
+- Skills versus AGENTS.md
+- Hook Lifecycle and Events
+- parry Injection Scanner
 
 ### Hands-On Labs
 
 **Skills**
 
 - Code Review Skill with Auto-Activation
-- Security Audit Skill: OWASP Top 10 Checklist
+- Security Audit Skill with OWASP Top 10
 - Lazy Loading Token Cost Comparison
 
 **Hooks & Plugin**
 
 - PreToolUse Auto-Lint Hook
-- Security Hook: Block DROP TABLE, rm -rf, Force Push
+- Security Hook Blocking Dangerous Commands
 - parry Injection Scanning on PreToolUse
 - Developer Plugin with Installer Script
 
@@ -274,12 +285,13 @@
 
 ### Module 10: Constraints, Linters & Self-Repair
 
+**Week 12**
+
 ### Class Topics
 
-- Stricter Constraints Produce More Reliable Output
-- Custom Linter Error as Agent Remediation Message
-- Test Coverage as Agent Infrastructure
-- Agent-to-Agent Review Loop
+- Constraints and Reliable Output
+- Custom Linter Remediation Messages
+- Test Coverage as Infrastructure
 - The Self-Repair Loop
 
 ### Hands-On Labs
@@ -287,32 +299,33 @@
 **Constraints & Test Harness**
 
 - Custom Ruff Rule with Remediation Message
-- ArchUnit Structural Test: Layer Dependency Enforcement
+- ArchUnit Structural Test for Layer Dependencies
 - Agent-Verified pytest Suite
 - Agent-to-Agent Review Pipeline
 
 **Self-Repair & CI**
 
-- Self-Repair Loop: Fail → Parse → Fix → Retry
+- Self-Repair Loop with Failure Parsing and Retry
 - GC Agent for Doc Drift and Dead Code
-- GitHub Actions: Linter, Tests, Coverage Gate, Architecture Check
+- GitHub Actions with Linter Tests and Coverage Gate
 
 ### AI Exam
 
-- Constraint and Feedback System Over 50 Agent Commits
+- Constraint and Feedback System Over Fifty Agent Commits
 
 
 ## MILESTONE 5: Monitoring, Log Analysis & Security
 
 ### Module 11: Structured Logging & AI Log Analysis
 
+**Week 13**
+
 ### Class Topics
 
-- Why Logs Are Ground Truth
-- Structured JSON Logging vs. Plain Text
-- Log Collection: Promtail and Loki
-- The Volume Problem: Filter Before Model
-- Cost-Effective Model Routing for Log Analysis
+- Logs as Ground Truth
+- Structured JSON Logging
+- Log Collection with Loki
+- The Volume Problem
 
 ### Hands-On Labs
 
@@ -323,9 +336,9 @@
 
 **Sending Logs to Models**
 
-- Naive vs. Filtered Log Analysis Token Comparison
-- Log Pre-Processor: Filter, Deduplicate, Summarize
-- Tiered Model Pipeline: Classification then Escalation
+- Naive versus Filtered Log Analysis Token Comparison
+- Log Pre-Processor with Filter and Deduplication
+- Tiered Model Pipeline with Classification and Escalation
 
 **AI Log Analysis**
 
@@ -339,26 +352,27 @@
 
 ### Module 12: Evaluation & Security Hardening
 
+**Week 14**
+
 ### Class Topics
 
-- Agent Evaluation: Non-Deterministic Systems, Non-Traditional Testing
-- LLM-as-Judge with Calibrated Rubrics
-- System Analysis: Bug Archaeology and Architecture Drift
-- Security Surface: Prompt Injection, Exfiltration, Escalation
-- Defense: Input Sanitization, Output Filtering, OWASP LLM Top 10
+- Agent Evaluation Methods
+- LLM-as-Judge with Rubrics
+- Security Surface and Attack Vectors
+- Input Sanitization and Output Filtering
 
 ### Hands-On Labs
 
 **Evaluation & System Analysis**
 
-- LLM-as-Judge Eval Suite: 10 Rubrics
-- Scenario Test Suite: 30 Cases
-- Bug Archaeology Agent on 3 Months of Git History
+- LLM-as-Judge Evaluation Suite
+- Scenario Test Suite
+- Bug Archaeology Agent on Three Months of Git History
 - Architecture Drift Detection Agent
 
 **Security Hardening**
 
-- Prompt Injection Red-Team: 5 Direct + 5 Indirect Attacks
+- Prompt Injection Red-Team with Direct and Indirect Attacks
 - Input Sanitization PreToolUse Hook
 - Output Filtering for Secrets and PII
 - OWASP LLM Top 10 Walkthrough with Mitigations
